@@ -1,0 +1,114 @@
+<ui:composition template="/WEB-INF/templates/plantilla.xhtml" 
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+  
+    <ui:define name="title">Noticias</ui:define>
+    <ui:define name="content">
+        <div class="container_12">
+
+        </div>
+
+        <div class="content">
+            <div class="container_12">
+                <div class="grid_12">
+                    <h3>MANADA DE THA - GRUPO SCOUT 39 SANTO ANGEL - MÁLAGA</h3>
+                </div>
+                <div class="boxes">
+                    <div class="grid_4">
+                        <figure>
+                            <div><img src="./resources/images/page1_img1.jpg" alt=""/></div>
+                            <figcaption>
+                                <h3>Manada</h3>
+                                
+                                La imaginación deja paso a la sed de aventuras. El contacto directo con la Naturaleza y las destrezas para desenvolverse en el medio natural les permiten ir más allá en la formación de sí mismos y de su personalidad.
+                                A través de las “Especialidades”, los chicos aprenden destrezas individuales en áreas que más les motivan, abriendo así el camino de su formación profesional y aficiones.
+                              
+                            </figcaption>
+                        </figure>
+                    </div>             
+                    <div class="clear"></div>
+                </div>
+                <div class="grid_8">
+                    <div id="tabs">
+                        <ul>
+                            <li><a href="#tabs-1">Noticias</a></li>
+
+                        </ul>
+                        <div class="clear"></div>
+                        <div class="tab_cont" id="tabs-1">
+                            <img src="./resources/images/page1_img4.jpg" alt=""/>
+                            <div class="extra_wrapper">
+                                <div class="text1">Scouts previenen la violencia de género entre adolescentes  </div>
+                                <p class="style1"> 
+                                El problema de la violencia de género no consiste únicamente en los casos de amenazas 
+                                graves,  violencia  física  o  lo
+                                s  asesinatos  de  mujeres.  Sino  que  de  una  manera  latente, 
+                                silenciosa, las chicas jóvenes, a partir de los diez o doce años comienzan a encontrarse 
+                                con situaciones en su vida que constituyen el primer paso de la violencia de género.
+                                Para atajar esta situaci
+                                ón, 
+                                Scouts de España
+                                ha lanzado el Concurso “
+                                Ponle fin desde el 
+                                principio
+                                ”, con el objetivo de que sean los propios adolescentes los que se involucren en 
+                                la erradicación de esta lacra social.
+                                </p>
+                                <div class="botones-en-linea"> 
+                                    <h:form>
+                                        <h:commandButton class="botones" value="AÑADE UN COMENTARIO" action="#{inicio.eventos()}"/> 
+                                    </h:form>
+                                </div>
+                                <div class="clear "></div>
+                            </div>
+                            <div class="clear cl1"></div>
+                            <img src="./resources/images/page1_img5.jpg" alt=""/>
+                            <div class="extra_wrapper">
+                                <div class="text1 tx1">Nace la Asociación Parlamentaria Scout de España APSE </div>
+                                La APSE es una asociación compuesta por parlamentarios españoles-diputados, senadores y eurodiputados
+                                que hayan sido scouts en el pasado o lo sigan siendo en el momento presente, y que con independencia 
+                                de su adscripción política deseen seguir apoyando al Movimiento Scout, canalizando sus propuestas, 
+                                y sirviéndoles de apoyo desde sus responsabilidades actuales.Las Asociaciones Parlamentarias Scouts 
+                                se emplean desde hace años en diferentes países democráticos, cuyo fin, además de representar a cada 
+                                uno de los países que cuentan con una, ante la Unión Parlamentaria Scout Mundial, es mantener una línea 
+                                de comunicación entre el Escultismo y los legisladores para poder trasladar las inquietudes o propuestas 
+                                de las organizaciones Scouts en las cuestiones relativas a su ámbito (infancia y juventud, medio ambiente, 
+                                voluntariado, educación).
+                                                               <div class="clear"></div>
+                                <div class="botones-en-linea"> 
+                                    <h:form>
+                                        <h:commandButton class="botones" value="AÑADE UN COMENTARIO" action="#{inicio.eventos()}"/> 
+                                    </h:form>
+                                </div>
+
+                                <div class="clear "></div>
+
+                            </div>		
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid_4">
+                    <div class="newsletter_title">BUSCAR   NOTICIAS </div>
+                    <div class="n_container">
+                        <h:form id="newsletter">
+                            <div class="text1">Busca por nombre </div>                         
+                            <label class="email">
+                                <h:inputText value="#{controlNoticias.nombre}"/></label>
+                            <br></br><br></br>
+                            <div class="autenticar">
+                                <h:commandButton action="#{controlNoticias.validarNot()}" value="Buscar Noticia" ></h:commandButton>
+                            </div>
+                            <p><br></br></p>
+                            
+                        </h:form>
+                   
+                    </div>
+                </div>
+                <div class="clear"></div></div>
+        </div>
+        
+    </ui:define>
+</ui:composition>
